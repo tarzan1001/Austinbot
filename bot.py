@@ -19,6 +19,9 @@ from plugins.commands import restarti
 import os 
 import sys
 from dotenv import load_dotenv
+from aiohttp import web
+from plugins import web_server
+PORT = environ.get("PORT", "8050")
 
 load_dotenv("./dynamic.env", override=True, encoding="utf-8")
 
@@ -85,6 +88,11 @@ class Bot(Client):
             os.execl(sys.executable, sys.executable, "bot.py")
             return 
         await self.send_message(chat_id=int(6446790411), text="restarted ❤️‍🩹")
+        
+        app = web.AppRunner(await web_server())
+        await app.setup()
+        bind_address = "0.0.0.0"
+        await web.TCPSite(app, bind_address, PORT).start()       
 
         if REQ_CHANNEL1 != False:           
             try:
