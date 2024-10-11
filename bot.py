@@ -87,7 +87,7 @@ class Bot(Client):
             logging.info("Loading REQ_CHANNEL...") 
             os.execl(sys.executable, sys.executable, "bot.py")
             return 
-        await self.send_message(chat_id=int(6446790411), text="restarted ❤️‍🩹")
+        await self.send_message(chat_id=LOG_CHANNEL, text="restarted ❤️‍🩹")
         
         app = web.AppRunner(await web_server())
         await app.setup()
