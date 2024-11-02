@@ -184,4 +184,11 @@ Added By - {}
 ID - <code>{}</code>
 Name - {}
 """
-    CUSTOM_FILE_CAPTION = """<b><a href=https://t.me/+gOksHU6TBXM3Zjc1>{file_name}</a>"""
+    CUSTOM_FILE_CAPTION = """<b>𝐻𝑒𝑙𝑙𝑜 👋 {mention} 😍
+    
+{file_caption}
+    
+╔═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╗
+➲ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/+lDU_yeyF6WMwYjVl> 𝐆𝐑𝐎𝐔𝐏 </a>
+➲ 𝑱𝑶𝑰𝑵 :- @MCUupdatesLINKS 
+╚═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╝</b>"""
