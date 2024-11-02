@@ -669,7 +669,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "why":
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ ʜᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('ʙᴏᴛ ᴏᴡɴᴇʀ', url=f"https://t.me/heyboy2k04")
+            InlineKeyboardButton('ʙᴏᴛ ᴏᴡɴᴇʀ', url=f"https://t.me/MCU_ADMIN_V1_BOT")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -680,7 +680,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "but":
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ ʜᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('ɢʀᴏᴜᴘ ᴀᴅᴍɪɴ', url=f"https://t.me/heyboy2k04")
+            InlineKeyboardButton('ɢʀᴏᴜᴘ ᴀᴅᴍɪɴ', url=f"https://t.me/MCU_ADMIN_V1_BOT")
         ],[
             InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ʀᴇǫᴜᴇsᴛ ᴍᴏᴠɪᴇs', callback_data='dey')
         ]]
