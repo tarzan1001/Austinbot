@@ -24,7 +24,6 @@ from database.filters_mdb import (
 )
 from database.gfilters_mdb import find_gfilter, get_gfilters
 import logging
-from plugins.commands import incol
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
