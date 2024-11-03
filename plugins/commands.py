@@ -88,17 +88,7 @@ async def send_file(client, query, ident, file_id):
         protect_content=True if ident == 'checksubp' else False,
         reply_markup=reply_markup
     )
-    text_data = infile.find_one({"_id": "file_text"})
-    if not text_data:
-        return
-    text = text_data.get("text")
-    if text == "off":
-        return
-    else:
-        matrix = await ok.reply(f"{text}")
-        await asyncio.sleep(59)
-        await matrix.delete()
-   
+       
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     await message.react("⚡")
