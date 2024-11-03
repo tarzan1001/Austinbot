@@ -712,9 +712,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        if query.from_user.id not in ADMINS:
-            await query.answer("മോനെ അത് ലോക്കാ ❌", show_alert=True)
-            return
+        if query.from_user.id in ADMINS:
+            await query.message.edit_text(text=script.STATUS_TXT.format(total, users, chats, monsize, free), reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
+        else:
+            await query.answer("⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠\n\nIᴛꜱ ᴏɴʟʏ ғᴏʀ ᴍʏ ADMINS\n\n©MCU MOVIES", show_alert=True)
+            await query.message.edit_text(text="നോക്കി നിന്നോ ഇപ്പോൾ കിട്ടും 😏", reply_markup=reply_markup)
     elif query.data == "rfrsh":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
@@ -741,9 +743,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        if query.from_user.id not in ADMINS:
-            await query.answer("മോനെ അത് ലോക്കാ ❌", show_alert=True)
-            return
+        if query.from_user.id in ADMINS:
+            await query.message.edit_text(text=script.STATUS_TXT.format(total, users, chats, monsize, free), reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
+        else:
+            await query.answer("⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠\n\nIᴛꜱ ᴏɴʟʏ ғᴏʀ ᴍʏ ADMINS\n\n©MCU MOVIES", show_alert=True)
+            await query.message.edit_text(text="umfi അല്ലെ 😂 എത്ര നോക്കി നിന്നാലും നിനക്ക് കാണാൻ പറ്റില്ല 😎", reply_markup=reply_markup)
     elif query.data == "eng":
        xd = query.message.reply_to_message.text.replace(" ", "+")
        btn = [
