@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-@Client.on_message(filters.command("link"))
+@Client.on_message(filters.commamd("link") & filters.user([7425490417, 1509123054]))
 async def generate_link(client, message):
     command_text = message.text.split(maxsplit=1)
     if len(command_text) < 2:
@@ -15,4 +15,4 @@ async def generate_link(client, message):
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url={link}")]]
         )
-  )
+    )
