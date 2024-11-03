@@ -114,7 +114,8 @@ async def save_filea(media):
             file_name=file_name,
             file_size=media.file_size,
             file_type=media.file_type,
-            mime_type=media.mime_type
+            mime_type=media.mime_type,
+            caption=media.caption.html if media.caption else None,
        )
     except ValidationError:
         logger.exception('Error occurred while saving file in database')
@@ -214,7 +215,7 @@ async def get_search_results(query, file_type=None, max_results=10, offset=0, fi
         return [], '', 0
 
     if USE_CAPTION_FILTER:
-        filter = {'$or': [{'file_name': regex}]}
+        filter = {'$or': [{'file_name': regex}, {'caption': regex}]}
     else:
         filter = {'file_name': regex}
 
