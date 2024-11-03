@@ -345,13 +345,13 @@ async def start(client, message):
                 protect_content=True if pre == 'filep' else False,
                 )
             filetype = msg.media
-            file = getattr(msg, filetype)
+            file = getattr(msg, filetype.value)
             title = file.file_name
             size=get_size(file.file_size)
             f_caption = f"<code>{title}</code>"
             if CUSTOM_FILE_CAPTION:
                 try:
-                    f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption, mention=message.from_user.mention)    
+                    f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption, mention=message.from_user.mention)
                 except:
                     return
             await msg.edit_caption(f_caption)
@@ -368,42 +368,25 @@ async def start(client, message):
             f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption, mention=message.from_user.mention)
         except Exception as e:
             logger.exception(e)
-            f_caption = f_caption
-
+            f_caption=f_caption
     if f_caption is None:
         f_caption = f"{title}"
-
-    xd = await client.send_cached_media(
+    ok = await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        protect_content=True if pre == 'filep' else False,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('പുതിയ സിനിമകൾ', url='https://t.me/+JRWRXAzDwkc2NDA1')
-            ],[
-            InlineKeyboardButton('മൂവീസ് ഗ്രൂപ്പ് ', url='https://t.me/+JRWRXAzDwkc2NDA1')
-            ]])
+        protect_content=True if pre == 'filep' else False,        
+        reply_markup=InlineKeyboardMarkup(
+                        [
+                         [
+            InlineKeyboardButton('🖥 𝗡𝗘𝗪 𝗢𝗧𝗧 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 🖥', url=f'https://t.me/+mKFmz9pYLkc5Njhl')
+            ],[     
+            InlineKeyboardButton("🖥 𝐎𝐓𝐓 𝐈𝐍𝐒𝐓𝐆𝐑𝐀𝐌 🖥", url='https://www.instagram.com/new_ott__updates?igsh=MTMxcmhwamF4eGp6eg==')
+    ]]
+                                                
+                    )
     )
-    if title and any(keyword in title.lower() for keyword in ['predvd', 'predvdrip']):
-        f_caption += "\n⚠️<b><i>ഈ മൂവിയുടെ ഫയൽ എവിടെയെങ്കിലും ഫോർവേഡ് ചെയ്തു വെക്കുക എന്നിട്ട് ഡൗൺലോഡ് ചെയ്യുക\n\n3 മിനിറ്റിൽ ഇവിടുന്ന് ഡിലീറ്റ് ആവും🗑\n\n⚠️Forward the file of this Movie somewhere and download it\n\nWill be deleted from here in 3 minutes🗑</i></b>"
-        inline_keyboard = [
-                [InlineKeyboardButton("🔸ALL MOVIES CLICK HERE🔸", url="https://t.me/+JRWRXAzDwkc2NDA1")]
-            ]
-        reply_markup = InlineKeyboardMarkup(inline_keyboard)
-        await xd.edit_caption(caption=f_caption, reply_markup=reply_markup)
-        await asyncio.sleep(180)
-        await message.delete()
-        await xd.delete()
-    text_data = infile.find_one({"_id": "file_text"})
-    if not text_data:
-        return
-    text = text_data.get("text")
-    if text == "off":
-        return
-    else:
-        matrix = await xd.reply(f"{text}")
-        await asyncio.sleep(59)
-        await matrix.delete()
-
+    
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
            
