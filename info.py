@@ -1,6 +1,7 @@
 import re
 from os import environ
 from Script import script
+from pyrogram import utils as pyroutils
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
@@ -46,6 +47,10 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1002303772763').split()]
 TEXT = environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}\n\nYour request has been approved")
 APPROVED = environ.get("APPROVED_WELCOME", "off").lower()
+
+#peer id fix 
+pyroutils.MIN_CHAT_ID = -999999999999
+pyroutils.MIN_CHANNEL_ID = -100999999999999
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', "-1002276401285"))
