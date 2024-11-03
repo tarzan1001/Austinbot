@@ -1015,25 +1015,27 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"<b>𝖥𝗂𝗅𝗆 : {search} \n𝖱𝖾𝗌𝗎𝗅𝗍𝗌 : {total_results}\n𝖴𝗌𝖾𝗋 : {message.from_user.mention}\n\n[Usᴇ Bᴇʟᴏᴡ Nᴇxᴛ Bᴜᴛᴛᴏɴ]</b>"
     if imdb and imdb.get('poster'):
         try:
-            ok = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
+            mat = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
+           # await message.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            ok = await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
+            await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
+            
+          #  await message.delete()
         except Exception as e:
             logger.exception(e)
-            ok = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            
+          #  await message.delete()
     else:
-        ok = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-    del_data = incol.find_one({"_id": "delete_time"})
-    if del_data:
-        time_seconds = del_data.get("time_seconds")        
-        await asyncio.sleep(time_seconds)
-        await msg.delete()
-        await ok.delete()      
-    if spoll:
-        await msg.message.delete()
+        await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+        
+       # await message.delete()
+   # if spoll:
+      #  await msg.message.delete()
+
 
 
 async def advantage_spell_chok(msg):
