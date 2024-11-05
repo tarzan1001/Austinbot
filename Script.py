@@ -188,8 +188,9 @@ Name - {}
     CUSTOM_FILE_CAPTION = """<b>𝐻𝑒𝑙𝑙𝑜 👋 {mention} 😍
     
 {file_caption}
-    
-╔═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╗
-➲ 𝑱𝑶𝑰𝑵 :- <a href=https://t.me/+lDU_yeyF6WMwYjVl> 𝐆𝐑𝐎𝐔𝐏 </a>
-➲ 𝑱𝑶𝑰𝑵 :- @MCUupdatesLINKS 
-╚═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╝</b>"""
+
+🔗 𝗠𝗔𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗟𝗜𝗡𝗞 ☞ https://t.me/+uA5gEKm8WXk1ZTll
+https://t.me/+uA5gEKm8WXk1ZTll
+
+🔗 𝙈𝙤𝙫𝙞𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙂𝙧𝙤𝙪𝙥 ☞ https://t.me/+3DmUxFC-wj05ODE1
+https://t.me/+3DmUxFC-wj05ODE1</b>"""
