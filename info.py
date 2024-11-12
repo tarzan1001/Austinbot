@@ -16,7 +16,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'autodelete')
 API_ID = int(environ.get("API_ID", "19071424"))
 API_HASH = environ.get("API_HASH", "c4b3e298cc50fd4cc563ae75ee882948")
-BOT_TOKEN = environ.get("BOT_TOKEN", "7627787641:AAFb1bIaL1h3lnDGO91jpDBTfdbBOLr_4R8")
+BOT_TOKEN = environ.get("BOT_TOKEN", "7151944860:AAHBF8CDq49mUuc0i65TSqCKVJ0jCtSevv4")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -37,10 +37,10 @@ REQ_CHANNEL2=environ.get("REQ_CHANNEL2")
 REQ_CHANNEL2 = (int(REQ_CHANNEL2) if REQ_CHANNEL2 and id_pattern.search(REQ_CHANNEL2) else False) if REQ_CHANNEL2 is not None else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://MammoottyV1:MammoottyV1@cluster0.xr0bd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://MammoottyV2:MammoottyV2@cluster0.2fwwi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI3 = environ.get('DATABASE_URI3', "mongodb+srv://MammoottyV3:MammoottyV3@cluster0.l1wnp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "MammoottyV1")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://movietharavadu:UVoobug4UoiWr90I@cluster0.a2va7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "")
+DATABASE_URI3 = environ.get('DATABASE_URI3', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "movietharavadu")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #Auto approve
