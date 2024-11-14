@@ -189,8 +189,8 @@ Name - {}
     
 {file_caption}
 
-🔗 𝗠𝗔𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗟𝗜𝗡𝗞 ☞ https://t.me/+uA5gEKm8WXk1ZTll
-https://t.me/+uA5gEKm8WXk1ZTll
+🔗 𝗠𝗔𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗟𝗜𝗡𝗞 ☞ https://t.me/+DChVLNHvHyFkNmY1
+https://t.me/+DChVLNHvHyFkNmY1
 
-🔗 𝙈𝙤𝙫𝙞𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙂𝙧𝙤𝙪𝙥 ☞ https://t.me/+3DmUxFC-wj05ODE1
-https://t.me/+3DmUxFC-wj05ODE1</b>"""
+🔗 𝙈𝙤𝙫𝙞𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙂𝙧𝙤𝙪𝙥 ☞ https://t.me/+DChVLNHvHyFkNmY1
+https://t.me/+DChVLNHvHyFkNmY1</b>"""
