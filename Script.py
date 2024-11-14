@@ -17,9 +17,8 @@ class script(object):
 
 𝖨𝖺𝗆 𝖯𝗈𝗐𝖾𝗋𝖥𝗎𝗅𝗅 𝖠𝗎𝗍𝗈 𝖥𝗂𝗅𝗍𝖾𝗋 + 𝖬𝗈𝗏𝗂𝖾 𝖲𝖾𝖺𝗋𝖼𝗁 + 𝖬𝖺𝗇𝗎𝖺𝗅 𝖥𝗂𝗅𝗍𝖾𝗋 𝖡𝗈𝗍 ⚙
 
-𝖧𝗈𝗌𝗍𝖾𝖽 𝖡𝗒 @MCU_ADMIN_V1_BOT 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝗂𝗇𝗀 𝖬𝖾 𝗂𝗇 𝖵𝖯𝖲. 𝖸𝗈𝗎 𝖢𝖺𝗇 𝖩𝗈𝗂𝗇 𝖠𝗇𝖽 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝗂𝗇 𝖬𝗈𝗏𝗂𝖾𝗌 𝖦𝗋𝗈𝗎𝗉 @MCUupdatesLINKS
-"""
-
+ 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝗂𝗇𝗀 𝖬𝖾 𝗂𝗇 𝖵𝖯𝖲. 𝖸𝗈𝗎 𝖢𝖺𝗇 𝖩𝗈𝗂𝗇 𝖠𝗇𝖽 𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝗂𝗇 𝖬𝗈𝗏𝗂𝖾𝗌 𝖦𝗋𝗈𝗎𝗉
+ 
     SOURCE_TXT = """<b>കൊട്ക്ക്ണില്ല്യാ......</b>"""
     
     MCAHU_TXT = """The new command features are listed below. More features coming soon
@@ -192,5 +191,5 @@ Name - {}
 🔗 𝗠𝗔𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗟𝗜𝗡𝗞 ☞ https://t.me/+DChVLNHvHyFkNmY1
 https://t.me/+DChVLNHvHyFkNmY1
 
-🔗 𝙈𝙤𝙫𝙞𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙂𝙧𝙤𝙪𝙥 ☞ https://t.me/+DChVLNHvHyFkNmY1
-https://t.me/+DChVLNHvHyFkNmY1</b>"""
+🔗 𝙈𝙤𝙫𝙞𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙂𝙧𝙤𝙪𝙥 ☞ https://t.me/+P5-1lxPsL-83YmJl
+https://t.me/+P5-1lxPsL-83YmJl</b>"""
