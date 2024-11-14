@@ -25,7 +25,7 @@ class script(object):
     
 /start - Welcome (Help , About and others)
     
-/setchat1 - 1st force Sub Channel ID
+/setchat1 - 1st Force Sub Channel ID
 
 /setchat2 - 2nd Force Sub Channel ID
 
