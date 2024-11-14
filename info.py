@@ -38,8 +38,8 @@ REQ_CHANNEL2 = (int(REQ_CHANNEL2) if REQ_CHANNEL2 and id_pattern.search(REQ_CHAN
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://movietharavadu:UVoobug4UoiWr90I@cluster0.a2va7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "")
-DATABASE_URI3 = environ.get('DATABASE_URI3', "")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://austin2001:rBIgGdrNSOSBDcKF@cluster0.wn6bi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI3 = environ.get('DATABASE_URI3', "mongodb+srv://movietharavadu:UVoobug4UoiWr90I@cluster0.a2va7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "movietharavadu")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
