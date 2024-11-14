@@ -23,7 +23,7 @@ class script(object):
     
     MCAHU_TXT = """The new command features are listed below. More features coming soon
     
-/start - Welcome🤗 (Help , About and others)
+/start - Welcome (Help , About and others)
     
 /setchat1 - 1st force Sub Channel ID
 
